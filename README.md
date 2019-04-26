@@ -21,16 +21,16 @@ Create a new branch from `master` and name it `dev` on your forked repo. Clone t
 
 Task 3 (The important one)
 -------------
-On the dev branch, create a dynamic endpoint `/information/<query>`. A student queries this endpoint with a string that represents either a `number` or a `building_name`. Your task is, given a `building_name`, display how full that building is, and given a `number`, display the `number`-least crowded places, including how full they are.
+On the dev branch, create a dynamic endpoint `/information/<query>`. A student queries this endpoint with a string that represents either a `number` or a `building_name`. Your task is, given a `building_name`, display how full that building is, and given a `number`, display the `number`-least crowded places, including how full they are. NOTE: Do NOT hardcode your API key obtained through density's website (however you solve this setback, make sure to specify it in the documentation).
 
 For example, if I navigate to `localhost:5000/information/Butler`, my page will look like the following:
 ![building_example](images/building.png)
 
-Take into account that the user may input building name with lowercase too, and the website should be flexible enough not to break with this small change (e.g. `localhost:5000/information/butler`). For the case where a `building_name` has whitespace (e.g. Lehman Library), you may substitute whitespace with underscores (e.g. Lehman_Library). You do not have to take into account input more malicious than those two cases.
+Take into account that the user may input building name with lowercase too, and the website should be flexible enough not to break with this small change (e.g. `localhost:5000/information/butler`).For the case where a `building_name` has whitespace (e.g. "Lehman Library"), you may assume that the url format will use underscores instead (e.g. "Lehman_Library"). You do not have to take into account input more malicious than those two cases.
 
 
 
-Similarly, if I navigate to `localhost:5000/information/5`, my page will look like the following:
+Similarly, if I navigate to `localhost:5000/information/8`, my page will look like the following:
 ![number_example](images/number.png)
 
 
