@@ -3,7 +3,8 @@ ADI Labs F'19 Technical Challenge
 
 We're excited to see that you're interested in joining ADI Labs for the Fall 2019 semester!
 
-In Labs, we build products that are deployed and used by hundreds of students here at Columbia and beyond. To make sure you have enough technical experience to join the team, we've put together a quick technical challenge to assess your ability to use Flask, HTML/CSS, Git/GitHub, and basic data structures.
+In Labs, we build products that are deployed and used by hundreds of students here at Columbia and beyond. We've put together a quick technical diagnostic to familiarize yourself with Flask, HTML/CSS, Git/GitHub, and basic data structures. This portion will help us ensure that you are fully supported by your team and to get a taste of your skillset and creativity. Just try your best!
+
 This diagnostic requires Python 3, a basic text editor (ex. Sublime/VS Code/TextEdit), Git (pre-installed on most computers), and a GitHub account. Please complete this challenge on your own.
 
 
