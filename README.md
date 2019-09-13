@@ -14,7 +14,7 @@ ADI wants to help the Columbia community during finals and midterms by telling t
 
 Task 1
 -------------
-Fork this repository.
+[Fork](https://help.github.com/en/articles/fork-a-repo) this repository. If you don't have a github account, please create one. 
 
 Task 2
 -------------
@@ -36,10 +36,13 @@ Similarly, if I navigate to `localhost:5000/information/8`, my page will look li
 
 
 You will find these libraries and websites helpful in completing this task:
+- [Flask Installation](http://flask.palletsprojects.com/en/1.1.x/installation/#)
+- [Flask Quickstart](http://flask.palletsprojects.com/en/1.1.x/quickstart/#) Tip - check out "variable rules" section
 - [Requests](http://docs.python-requests.org/en/master/)
 - [Density](https://www.density.adicu.com) -- specifically [this page](https://density.adicu.com/docs)
 - [Buildings Info](https://density.adicu.com/docs/building_info)
 - [Density API Docs](https://github.com/ADI-Labs/density/blob/master/API.md)
+
 
 Task 4
 -------------
