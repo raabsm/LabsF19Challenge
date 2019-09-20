@@ -6,7 +6,12 @@
 </head>
 <body>
 
-<h1>This is a header</h1>
+<h3>{% for library_info in libraries %}
+
+    {{ library_info }} <br><br><br>
+
+    {% endfor %}
+</h3>
 
 </body>
 </html>

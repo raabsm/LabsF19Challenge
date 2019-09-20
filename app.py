@@ -13,7 +13,7 @@ def get_lib_info():
 
 def get_lib_info_by_name(library_name):
     data = get_lib_info()
-    library_name.replace("_"," ")
+    library_name.replace("_" , " ")
     library_name = library_name.capitalize()
     library_list = []
     for entry in data:
@@ -37,10 +37,9 @@ def main(input):
         num_libraries = int(input)
         libraries = get_least_crowded(num_libraries)
     except ValueError as e:
-        libraries = get_lib_info_by_name("butler")
-
+        libraries = get_lib_info_by_name(input)
     print(libraries)
-    return render_template('index.html')
+    return render_template('libraries.html', libraries=libraries)
 
 
 if __name__ == '__main__':
