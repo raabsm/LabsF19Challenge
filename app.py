@@ -5,7 +5,7 @@ API_KEY = 'j82eDZBoi2iZa-DgbGtEZVBMyWBKfHGIu_k84c7OLcHPzSSCWepFE6AqBb8PNr0r'
 
 app = Flask(__name__)
 
-
+#queries library data
 def get_lib_info():
     url = 'http://density.adicu.com/latest?auth_token={}'.format(API_KEY)
     response = requests.get(url)
@@ -15,9 +15,9 @@ def get_lib_info():
 
 def get_lib_info_by_name(library_name):
     data = get_lib_info()
+    #formats the response
     library_name = library_name.replace("_", " ")
     library_name = library_name.title()
-    print(library_name)
     library_list = []
     for entry in data:
         if entry['building_name'] == library_name:
@@ -27,8 +27,8 @@ def get_lib_info_by_name(library_name):
 
 def get_least_crowded(num_libraries):
     data = get_lib_info()
+    #sorts the dictionary properly
     data = sorted(data, key=lambda i: i['percent_full'])
-    print(data)
     library_list = []
     num_libraries = min(num_libraries, len(data))
     for i in range(0, num_libraries):
@@ -38,6 +38,7 @@ def get_least_crowded(num_libraries):
 
 @app.route('/information/<input>', methods=['GET'])
 def main(input):
+    #see if the endpoint was a number
     try:
         num_libraries = int(input)
         libraries = get_least_crowded(num_libraries)
